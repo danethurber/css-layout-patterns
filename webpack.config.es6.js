@@ -12,7 +12,6 @@ var opts = {
   devtool: 'inline-source-map',
 
   entry: {
-    shared: path.join(config.assets.entryDir, 'javascripts', 'shared'),
     main: path.join(config.assets.entryDir, 'javascripts', 'main')
   },
 
