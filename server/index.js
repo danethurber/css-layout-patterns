@@ -23,7 +23,7 @@ server.route({
   }
 })
 
-var examples = ['box-model']
+var examples = ['box-model', 'box-sizing']
 
 examples.forEach(function(name){
   server.route({

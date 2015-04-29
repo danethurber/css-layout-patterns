@@ -1,30 +1,33 @@
 {{#markdown}}
-
 # Box Model
 
-```css
-@media screen and (-webkit-min-device-pixel-ratio: 0) {
-  body:first-of-type pre::after {
-    content: 'highlight: ' attr(class);
-  }
-}
+Every element in HTML is a rectangle. That rectangle is seperated into four
+sections: margin, padding, border and the content area(height/width).
 
-@import url('print.css');
-@page:right {
- margin: 1cm 2cm 1.3cm 4cm;
-}
+The calculated width is the area between the borders of the box, including padding and border.
 
-@font-face {
-  font-family: Chunkfive; src: url('Chunkfive.otf');
-}
+<figure class="example__wrapper">
+![Box Model]({{asset-path 'box-model.png'}})
+</figure>
 
-div.text,
-#content,
-li[lang=ru] {
-  font: Tahoma, Chunkfive, sans-serif;
-  background: url('hatch.png') /* wtf? */;  color: #F0F0F0 !important;
-  width: 100%;
+```scss
+.box-model__example {
+  width: 400px;
+  height: 100px;
+  padding: 20px;
+  border: 6px solid #999;
+  margin: 20px;
 }
 ```
+
+<figure class="example__wrapper">
+  <div class="box-model__example"></div>
+</figure>
+
+
+##### Notes:
+
+- outline does not effect the box-model
+- default box-sizing: content-box
 
 {{/markdown}}

@@ -37,6 +37,13 @@ var opts = {
       {
         test: /\.css$/,
         loader: 'style!css?sourceMap'
+      },
+      {
+        test: /\.(jpe?g|png|gif|svg)$/i,
+        loaders: [
+          'file?hash=sha512&digest=hex&name=[name].[hash].[ext]',
+          'image?bypassOnDebug&optimizationLevel=7&interlaced=false'
+        ]
       }
     ]
   },

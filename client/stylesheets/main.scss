@@ -1,1 +1,33 @@
 @import 'framework';
+
+.page-container {
+  padding: 20px;
+  max-width: 768px;
+  margin: 0 auto;
+}
+
+.example__wrapper {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.box-model__example {
+  max-width: 400px;
+  height: 100px;
+  padding: 20px;
+  border: 6px solid #999;
+  margin: 20px auto;
+  background-color: #F0F0F0;
+}
+
+.border-box__example {
+  width: 400px;
+  padding: 40px;
+  border: 6px solid #999;
+  margin: 20px auto;
+  background-color: #F0F0F0;
+}
+
+.border-box--without {
+  box-sizing: content-box;
+}
