@@ -1,0 +1,4 @@
+@mixin text-size-adjust($val: 100%){
+  -webkit-text-size-adjust: $val;
+      -ms-text-size-adjust: $val;
+}

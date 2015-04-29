@@ -1,0 +1,29 @@
+/*doc
+---
+title: Color Variables
+name: colors
+category: config
+---
+
+*/
+
+
+$black: #000;
+$white: #FFF;
+
+$palettes: (
+  gray: (
+    base: lighten($black, 33.5%),
+    darker: lighten($black, 13.5%),
+    dark: lighten($black, 20%),
+    light: lighten($black, 46.7%),
+    lighter: lighten($black, 93.5%)
+  )
+) !default;
+
+$brand-primary: #FF2E63 !default;
+
+$background-color: $white !default;
+$text-color: palette(gray) !default;
+
+$border-color: palette(gray, light) !default;

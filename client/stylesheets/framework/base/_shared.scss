@@ -1,0 +1,26 @@
+// NOTE: only add margins to left and bottom of element
+// csswizardry.com/2012/06/single-direction-margin-declarations
+%margin-bottom {
+  margin-bottom: $base-spacing-unit;
+  margin-bottom: ($base-spacing-unit / $base-font-size) * 1rem;
+}
+%margin-left {
+  margin-left: 2 * $base-spacing-unit;
+  margin-left: (2 * $base-spacing-unit / $base-font-size) * 1rem;
+}
+
+
+h1, h2, h3, h4, h5, h6,
+ul, ol, dl,
+blockquote, p, address,
+hr,
+table,
+fieldset, figure,
+pre {
+  margin-top: 0;
+  @extend %margin-bottom;
+}
+
+ul, ol, dd {
+  @extend %margin-left;
+}

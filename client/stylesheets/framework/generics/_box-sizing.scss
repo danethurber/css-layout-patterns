@@ -1,0 +1,13 @@
+$global-box-sizing: border-box;
+
+html {
+  @include box-sizing($global-box-sizing);
+}
+
+* {
+  &,
+  &:before,
+  &:after {
+    @include box-sizing(inherit);
+  }
+}

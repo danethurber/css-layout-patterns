@@ -1,0 +1,6 @@
+// NOTE: read this first before using
+// http://usabilitypost.com/2012/11/05/stop-fixing-font-smoothing/
+
+@mixin font-smoothing($val: antialiased){
+  -webkit-font-smoothing: $val;
+}
