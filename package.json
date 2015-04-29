@@ -5,7 +5,7 @@
   "author": "Dane Thurber <dane.thurber@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "start": "webpack-dev-server --content-base public"
+    "start": "node ./index.js"
   },
   "dependencies": {
     "babel": "^5.1.13",
