@@ -1,0 +1,33 @@
+{{#markdown}}
+
+# Include Media - SASS to the rescue
+
+[include-media](http://include-media.com/) is a Sass library for writing CSS media queries in an easy and maintainable way, using a natural and simplistic syntax.
+
+- flexible declaration of breakpoints using sass map
+- declarative/readable syntax for media queries
+- flexiblity
+
+{{/markdown}}
+
+<figure class="example__wrapper">
+  <div class="stoplight-include-media"></div>
+</figure>
+
+{{#markdown}}
+```scss
+.stoplight {
+  background-color: green;
+  height: 200px;
+
+  @include media(">tablet") {
+    background-color: red;
+  }
+
+  @include media(">desktop") {
+    background-color: yellow;
+  }
+}
+
+```
+{{/markdown}}

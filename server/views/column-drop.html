@@ -1,0 +1,49 @@
+{{#markdown}}
+
+# Column Drop
+
+Example of using media queries to build a responsive layout.
+
+{{/markdown}}
+<figure class="example__wrapper">
+  <div class="column-drop">
+    <div class="column-drop__primary">
+      <p>primary</p>
+    </div>
+    <div class="column-drop__secondary">
+      <p>secondary</p>
+    </div>
+    <div class="column-drop__tertiary">
+      <p>tertiary</p>
+    </div>
+  </div>
+</figure>
+
+{{#markdown}}
+
+```scss
+.row {
+  @include clearfix();
+}
+.column {
+  width: 100%;
+  height: 100px;
+  float: left;
+}
+.column__primary { background-color: red; }
+.column__secondary { background-color: blue; }
+.column__tertiary { background-color: yellow; }
+
+@include media(">tablet") {
+  .column__primary { width: 50%; }
+  .column__secondary { width: 25%; }
+  .column__tertiary { width: 25%; }
+}
+
+@include media(">desktop") {
+  .column__primary { width: 33%; }
+  .column__secondary { width: 33%; }
+  .column__tertiary { width: 33%; }
+}
+```
+{{/markdown}}

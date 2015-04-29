@@ -1,0 +1,34 @@
+{{#markdown}}
+
+# Media Queries
+
+CSS Expressions that limits the scope of the styles by media features(width, height, orientation, pixel ratio).
+
+{{/markdown}}
+
+<figure class="example__wrapper">
+  <div class="stoplight"></div>
+</figure>
+
+{{#markdown}}
+```scss
+
+.stoplight {
+  background-color: green;
+  height: 200px;
+}
+
+@media (max-width: 768px) {
+  .stoplight {
+    background-color: yellow;
+  }
+}
+
+@media (max-width: 480px) {
+  .stoplight {
+    background-color: red;
+  }
+}
+
+```
+{{/markdown}}
