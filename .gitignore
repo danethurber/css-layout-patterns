@@ -10,3 +10,6 @@ Desktop.ini
 
 # Dependencies
 node_modules
+
+# built files
+public/assets
