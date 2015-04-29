@@ -23,7 +23,9 @@ server.route({
   }
 })
 
-var examples = ['box-model', 'box-sizing']
+var examples = ['box-model', 'box-sizing', 'constrained-width']
+examples = examples.concat(['media-queries', 'mobile-first', 'include-media'])
+examples = examples.concat(['gutter-pull'])
 
 examples.forEach(function(name){
   server.route({

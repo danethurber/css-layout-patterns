@@ -8,26 +8,12 @@
 
 .example__wrapper {
   text-align: center;
-  margin-bottom: 40px;
+  margin-bottom: 20px;
+  padding: 10px;
+  background-color: rgba($black, .02);
+  border: 1px solid rgba($black, .04);
+  border-radius: 5px;
 }
 
-.box-model__example {
-  max-width: 400px;
-  height: 100px;
-  padding: 20px;
-  border: 6px solid #999;
-  margin: 20px auto;
-  background-color: #F0F0F0;
-}
-
-.border-box__example {
-  width: 400px;
-  padding: 40px;
-  border: 6px solid #999;
-  margin: 20px auto;
-  background-color: #F0F0F0;
-}
-
-.border-box--without {
-  box-sizing: content-box;
-}
+@import 'examples/building-blocks';
+@import 'examples/floating';

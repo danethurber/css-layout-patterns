@@ -1,0 +1,33 @@
+.box-model__example {
+  max-width: 400px;
+  height: 100px;
+  padding: 20px;
+  border: 6px solid #999;
+  margin: 20px auto;
+  background-color: #F0F0F0;
+}
+
+.border-box__example {
+  width: 400px;
+  padding: 40px;
+  border: 6px solid #999;
+  margin: 20px auto;
+  background-color: #F0F0F0;
+}
+
+.border-box--without {
+  box-sizing: content-box;
+}
+
+.constrained-width {
+  max-width: 400px;
+  padding: 40px 0;
+  border: 1px dashed $border-color;
+  border-top: none;
+  border-bottom: none;
+}
+
+.constrained-width--centered {
+  margin-left: auto;
+  margin-right: auto;
+}

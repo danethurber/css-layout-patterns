@@ -1,0 +1,41 @@
+{{#markdown}}
+
+# Constraining an Element's Width
+
+Define an element max-width to prevent it from expanding to width
+
+<figure class="example__wrapper">
+  <div class="constrained-width">
+    <p>Donec id elit non mi porta gravida at eget metus. Donec sed odio dui. Donec sed odio dui. Donec ullamcorper nulla non metus auctor fringilla.</p>
+  </div>
+</figure>
+
+```scss
+.constrained-width {
+  max-width: 400px;
+}
+```
+
+
+## Center a Block Element
+
+Set Horizontal Margins to Auto to Center a Block Element
+
+<figure class="example__wrapper">
+  <div class="constrained-width constrained-width--centered">
+    <p>Donec id elit non mi porta gravida at eget metus. Donec sed odio dui. Donec sed odio dui. Donec ullamcorper nulla non metus auctor fringilla.</p>
+  </div>
+</figure>
+
+```scss
+.constrained-width {
+  max-width: 400px;
+}
+.constrained-width--centered {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+```
+
+{{/markdown}}
