@@ -1,0 +1,7 @@
+{
+  "apps": [{
+    "name" : "css-layout-patterns",
+    "script" : "./index.js",
+    "watch": ["server", "config", "public/assets/manifest.json"]
+  }]
+}
