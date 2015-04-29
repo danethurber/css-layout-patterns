@@ -7,11 +7,16 @@
   <title>CSS Layout Patterns</title>
 
   <link href="//fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,300italic,400italic,600italic,700italic" rel="stylesheet" type="text/css" />
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.5/styles/solarized_dark.min.css">
 </head>
 <body>
 
   {{{content}}}
 
   <script src="{{asset-path 'shared.js'}}"></script>
+  <script src="{{asset-path 'main.js'}}"></script>
 
   {{{block 'pageJS'}}}
+
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.5/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
