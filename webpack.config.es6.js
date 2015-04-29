@@ -13,7 +13,7 @@ var opts = {
 
   entry: {
     shared: path.join(config.assets.entryDir, 'javascripts', 'shared'),
-    main: path.join(config.assets.entryDir, 'javascripts', 'main'),
+    main: path.join(config.assets.entryDir, 'javascripts', 'main')
   },
 
   output: {

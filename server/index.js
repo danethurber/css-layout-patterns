@@ -19,19 +19,24 @@ server.route({
   method: 'GET',
   path: `${config.assets.publicPath}{param*}`,
   handler: {
-    directory: {
-      path: config.assets.publicDir
-    }
+    directory: { path: config.assets.publicDir }
   }
+})
+
+var examples = ['box-model']
+
+examples.forEach(function(name){
+  server.route({
+    method: '*',
+    path: `/${name}`,
+    handler (request, reply) { reply.view(name) }
+  })
 })
 
 server.route({
   method: '*',
-  path:'/{p*}',
-
-  handler (request, reply) {
-    reply.view('index')
-  }
+  path: '/',
+  handler (request, reply) { reply.view('index') }
 })
 
 export default server
