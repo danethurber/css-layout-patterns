@@ -1,0 +1,94 @@
+{{#markdown}}
+
+# Positioning
+
+Fine grain control of where the element is positioned.
+
+## Relative to Self
+{{/markdown}}
+
+<figure class="example__wrapper clearfix">
+  <div class="pos-relative__parent">
+    <div class="pos-relative"></div>
+  </div>
+</figure>
+
+{{#markdown}}
+
+```scss
+.pos-relative {
+  height: 150px;
+  width: 300px;
+  background: red;
+
+  position: relative;
+  top: 20px;
+  right: -60px;
+}
+```
+
+## Absolutely Relative to Parent
+
+{{/markdown}}
+
+
+<figure class="example__wrapper">
+  <div class="pos-absolute__parent">
+    <div class="pos-absolute"></div>
+  </div>
+</figure>
+
+{{#markdown}}
+
+```scss
+.pos-absolute__parent {
+  height: 150px;
+  width: 300px;
+  background: green;
+  position: relative;
+}
+.pos-absolute {
+  height: 150px;
+  width: 300px;
+  background: red;
+
+  position: absolute;
+  top: 20px;
+  right: -60px;
+}
+```
+## Overflow
+
+{{/markdown}}
+
+<figure class="example__wrapper">
+  <div class="pos-overflow__parent">
+    <div class="pos-overflow"></div>
+  </div>
+</figure>
+
+{{#markdown}}
+
+```scss
+.pos-overflow__parent {
+  height: 150px;
+  width: 300px;
+  background: green;
+  position: relative;
+  overflow: hidden;
+}
+.pos-overflow {
+  height: 150px;
+  width: 300px;
+  background: red;
+
+  position: absolute;
+  top: 20px;
+  right: -60px;
+}
+```
+##### Notes:
+
+  - overflow is how we add scrollbars
+
+{{/markdown}}

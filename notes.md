@@ -6,3 +6,5 @@ http://csswizardry.com/csswizardry-grids/
 http://csswizardry.com/2013/05/the-flag-object/
 http://www.lukew.com/ff/entry.asp?1514
 http://bradfrost.github.io/this-is-responsive/patterns.html
+
+http://philipwalton.com/articles/what-no-one-told-you-about-z-index/

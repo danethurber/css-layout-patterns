@@ -1,0 +1,73 @@
+.pos-relative__parent {
+  height: 150px;
+  width: 300px;
+  background: rgba(red, .1);
+}
+.pos-relative {
+  height: 150px;
+  width: 300px;
+  background: red;
+
+  position: relative;
+  top: 20px;
+  right: -60px;
+}
+
+.pos-absolute__parent {
+  height: 150px;
+  width: 300px;
+  background: green;
+  position: relative;
+}
+.pos-absolute {
+  height: 150px;
+  width: 300px;
+  background: red;
+
+  position: absolute;
+  top: 20px;
+  right: -60px;
+}
+
+.pos-overflow__parent {
+  height: 150px;
+  width: 300px;
+  background: green;
+  position: relative;
+  overflow: hidden;
+}
+.pos-overflow {
+  height: 150px;
+  width: 300px;
+  background: red;
+
+  position: absolute;
+  top: 20px;
+  right: -60px;
+}
+
+.z-index {
+  position: relative;
+  height: 150px;
+  width: 300px;
+  background: yellow;
+}
+.z-index__first {
+  height: 100px;
+  width: 150px;
+  background: green;
+
+  position: absolute;
+  top: 0;
+  left: 50px;
+  z-index: 100;
+}
+.z-index__second {
+  height: 100px;
+  width: 150px;
+  background: red;
+
+  position: absolute;
+  bottom: 0;
+  right: 50px;
+}

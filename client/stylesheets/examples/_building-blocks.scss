@@ -1,5 +1,6 @@
 .box-model__example {
-  max-width: 400px;
+  box-sizing: content-box;
+  width: 400px;
   height: 100px;
   padding: 20px;
   border: 6px solid #999;
@@ -15,9 +16,6 @@
   background-color: #F0F0F0;
 }
 
-.border-box--without {
-  box-sizing: content-box;
-}
 
 .constrained-width {
   max-width: 400px;

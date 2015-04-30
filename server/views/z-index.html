@@ -1,0 +1,67 @@
+{{#markdown}}
+
+# Z-Index
+
+Controls vertical stacking order of elements.
+Element must have position value other than static for it to take effect.
+
+## Stacking
+
+{{/markdown}}
+
+<figure class="example__wrapper clearfix">
+  <div class="z-index">
+    <div class="z-index__first"></div>
+    <div class="z-index__second"></div>
+  </div>
+</figure>
+
+{{#markdown}}
+
+```scss
+.z-index {
+  position: relative;
+  height: 150px;
+  width: 300px;
+  background: yellow;
+}
+.z-index__first {
+  height: 100px;
+  width: 150px;
+  background: green;
+
+  position: absolute;
+  top: 0;
+  left: 50px;
+  z-index: 100;
+}
+.z-index__second {
+  height: 100px;
+  width: 150px;
+  background: red;
+
+  position: absolute;
+  bottom: 0;
+  right: 50px;
+}
+```
+
+
+## Sass Layering Variables
+
+```scss
+$z-navbar:            1000;
+$z-dropdown:          1000;
+$z-popover:           1060;
+$z-tooltip:           1070;
+$z-navbar-fixed:      1030;
+$z-modal-background:  1040;
+$z-modal:             1050;
+```
+
+
+##### Notes:
+
+  - look out for stacking contexts
+
+{{/markdown}}
