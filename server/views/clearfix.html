@@ -1,0 +1,74 @@
+{{#markdown}}
+
+# Clearfix
+
+Floated content doesn't effect the height of it's containing element unless it is
+cleared properly. A Clearfix is a way for an element to easily clear it's children.
+
+### Setting overflow: hidden
+
+{{/markdown}}
+
+<figure class="example__wrapper">
+  <div class="clearfix_overflow__parent">
+    <div class="clearfix_overflow__child"></div>
+  </div>
+</figure>
+
+{{#markdown}}
+
+```scss
+.clearfix_overflow__parent {
+  overflow: hidden;
+  background: red;
+}
+.clearfix_overflow__child {
+  background: green;
+  float: left;
+  height: 100px;
+  width: 100px;
+}
+
+```
+
+##### Notes:
+  - positioned elements will get clipped
+
+### Using a clearfix
+
+{{/markdown}}
+
+<figure class="example__wrapper">
+  <div class="clearfix__parent">
+    <div class="clearfix__child"></div>
+  </div>
+</figure>
+
+{{#markdown}}
+
+```scss
+@mixin clearfix {
+  &:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
+
+.clearfix__parent {
+  @include clearfix();
+  background: red;
+}
+.clearfix__child {
+  background: green;
+  float: left;
+  height: 100px;
+  width: 100px;
+}
+
+```
+
+##### Notes:
+  - positioned elements will get clipped
+
+{{/markdown}}

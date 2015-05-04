@@ -1,0 +1,21 @@
+.clearfix_overflow__parent {
+  overflow: hidden;
+  background: red;
+}
+.clearfix_overflow__child {
+  background: green;
+  float: left;
+  height: 100px;
+  width: 100px;
+}
+
+.clearfix__parent {
+  @include clearfix();
+  background: red;
+}
+.clearfix__child {
+  background: green;
+  float: left;
+  height: 100px;
+  width: 100px;
+}

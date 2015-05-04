@@ -1,0 +1,56 @@
+{{#markdown}}
+
+# Floats
+
+Take the element out of the normal document flow and place it on the right or
+left of it's container. Text and inline elements will wrap around it.
+
+{{/markdown}}
+
+<figure class="example__wrapper">
+  <img src="http://www.placecage.com/200/100" style="float: left"/>
+  <p>Maecenas sed diam eget risus varius blandit sit amet non magna. Maecenas sed diam eget risus varius blandit sit amet non magna. Nullam id dolor id nibh ultricies vehicula ut id elit. Nulla vitae elit libero, a pharetra augue. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Donec sed odio dui.</p>
+  <img src="http://www.placecage.com/50/100" style="float: right"/>
+  <p>Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Donec ullamcorper nulla non metus auctor fringilla. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Donec ullamcorper nulla non metus auctor fringilla.</p>
+</figure>
+
+
+{{#markdown}}
+
+## Clearing the float
+
+Floated elements stack against each other
+
+{{/markdown}}
+
+<figure class="example__wrapper">
+  <img src="http://www.placecage.com/150/150" style="float: left"/>
+  <img src="http://www.placecage.com/120/150" style="float: left"/>
+</figure>
+
+
+{{#markdown}}
+
+The clear property can be used to place the element after a previously floated element.
+
+{{/markdown}}
+
+<figure class="example__wrapper">
+  <img src="http://www.placecage.com/150/150" style="float: left"/>
+  <img src="http://www.placecage.com/150/120" style="float: left; clear: left;"/>
+</figure>
+
+
+{{#markdown}}
+
+```scss
+.first_image {
+  float: left;
+}
+.second_image {
+  float: left;
+  clear: left;
+}
+```
+
+{{/markdown}}
