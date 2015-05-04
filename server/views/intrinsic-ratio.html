@@ -1,0 +1,37 @@
+{{#markdown}}
+
+# Intrinsic Ratio
+
+{{/markdown}}
+
+<figure class="example__wrapper">
+    <div class="intrinsic-video">
+      <iframe width="640" height="360" src="https://www.youtube.com/embed/ngElkyQ6Rhs?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+    </div>
+</figure>
+
+{{#markdown}}
+
+```html
+<div class="intrinsic-video">
+  <iframe width="640" height="360" src="https://www.youtube.com/embed/ngElkyQ6Rhs?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+</div>
+```
+
+```scss
+.intrinsic-video {
+  position: relative;
+  padding-bottom: percentage(9/16);
+  height: 0;
+
+  iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+}
+```
+
+{{/markdown}}

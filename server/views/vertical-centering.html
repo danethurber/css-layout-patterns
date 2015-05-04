@@ -1,0 +1,68 @@
+{{#markdown}}
+
+# Vertical Centering
+
+## Centering With Positioning
+
+{{/markdown}}
+
+<figure class="example__wrapper">
+  <div class="pos-centered__parent">
+    <p class="pos-centered__child">Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
+  </div>
+</figure>
+
+{{#markdown}}
+
+```scss
+.pos-centered__parent {
+  position: relative;
+  background: yellow;
+  height: 300px;
+}
+.pos-centered__child {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  background: green;
+  transform: translate(-50%, -50%);
+  padding: 20px;
+}
+```
+
+## Centering With a Ghost Element
+
+{{/markdown}}
+
+<figure class="example__wrapper">
+  <div class="ghost-centered__parent">
+    <p class="ghost-centered__child">Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
+  </div>
+</figure>
+
+{{#markdown}}
+
+```scss
+.ghost-centered__parent {
+  background: yellow;
+  height: 300px;
+  text-align: center;
+
+  &:before {
+    content: '';
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+  }
+}
+.ghost-centered__child {
+  background: green;
+  display: inline-block;
+  vertical-align: middle;
+  width: 300px;
+  padding: 20px;
+  text-align: left;
+}
+```
+
+{{/markdown}}
