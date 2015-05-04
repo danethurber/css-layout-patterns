@@ -23,7 +23,7 @@ server.route({
   }
 })
 
-var examples = ['box-model', 'box-sizing', 'constrained-width']
+var examples = ['box-model', 'box-sizing', 'document-flow', 'constrained-width']
 examples = examples.concat(['media-queries', 'mobile-first', 'include-media', 'column-drop'])
 examples = examples.concat(['positioning', 'z-index'])
 examples = examples.concat(['gutter-pull'])

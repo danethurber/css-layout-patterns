@@ -1,0 +1,54 @@
+{{#markdown}}
+
+# Document Flow
+
+Elements are rendered according to their display order. Block Level Elements are
+displayed on a new line and Inline Elements are displayed on the same line.
+All Elements stack ordered from top to bottom and left to right.
+
+{{/markdown}}
+
+
+<figure class="example__wrapper">
+  <div class="block-elm"></div>
+  <div class="block-elm"></div>
+  <div class="block-elm"></div>
+  <br>
+  <p>
+    Donec ullamcorper nulla non metus auctor fringilla.
+    <span class="inline-elm">inline elm</span>
+    Aenean lacinia bibendum nulla sed consectetur. Cras justo odio, dapibus ac facilisis in, egestas eget quam.
+    <span class="inline-block-elm">inline block</span>
+    Nulla vitae elit libero, a pharetra augue. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.
+  </p>
+</figure>
+
+<style type="text/css">
+.block-elm {
+  height: 100px;
+  width: 100px;
+  background-color: red;
+}
+.block-elm:nth-child(2n) {
+  width: 300px;
+  height: 20px;
+  background-color: blue;
+}
+.block-elm:nth-child(3n) {
+  height: 60px;
+  width: 60px;
+  background-color: yellow;
+}
+.inline-elm {
+  height: 60px;
+  width: 60px;
+  background-color: green;
+}
+
+.inline-block-elm {
+  display: inline-block;
+  height: 60px;
+  width: 100px;
+  background-color: yellow;
+}
+</style>
