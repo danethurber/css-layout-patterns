@@ -1,0 +1,47 @@
+{{#markdown}}
+
+# Columns
+
+{{/markdown}}
+
+<figure class="example__wrapper">
+  <div class="column-float">
+    <div class="column-float__primary">
+      <p>primary</p>
+    </div>
+    <div class="column-float__secondary">
+      <p>secondary</p>
+    </div>
+    <div class="column-float__tertiary">
+      <p>tertiary</p>
+    </div>
+  </div>
+</figure>
+
+{{#markdown}}
+
+```scss
+.column-float {
+  @include clearfix();
+}
+.column-float__primary,
+.column-float__secondary,
+.column-float__tertiary {
+  height: 100px;
+  float: left;
+}
+.column-float__primary {
+  background-color: red;
+  width: 50%;
+}
+.column-float__secondary {
+  background-color: blue;
+  width: 25%;
+}
+.column-float__tertiary {
+  background-color: yellow;
+  width: 25%;
+}
+
+```
+{{/markdown}}

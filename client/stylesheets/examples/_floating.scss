@@ -19,3 +19,26 @@
   height: 100px;
   width: 100px;
 }
+
+.column-float {
+  @include clearfix();
+}
+.column-float__primary,
+.column-float__secondary,
+.column-float__tertiary {
+  width: 100%;
+  height: 100px;
+  float: left;
+}
+.column-float__primary {
+  background-color: red;
+  width: 50%;
+}
+.column-float__secondary {
+  background-color: blue;
+  width: 25%;
+}
+.column-float__tertiary {
+  background-color: yellow;
+  width: 25%;
+}
